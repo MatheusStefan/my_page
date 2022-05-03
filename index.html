@@ -22,6 +22,9 @@
             <li>
                 <a target="_blank" href="https://instagram.com/matheus_stefan">instagram</a>
             </li>
+            <li>
+                <a target="_blank" href="https://open.spotify.com/artist/01nhiJDD1jA4Bu3VDTlPVN?si=GaiusgpOTeS8ns0tsla0oA">spotify</a>
+            </li>
         </ul>
     </header>
     <main>
@@ -31,41 +34,33 @@
                 <h5>Biomédico, músico e futuro dev</h5>
             </div>
 
-            <div id="arrow">
-                <i class="fa-solid fa-play"> Aperte o play</i>
+            <div onclick= "displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-play"></i>
             </div>
-            <div id="about">
+            <div style="display:none" id ="about">
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui veniam exercitationem ipsam nemo
-                    consectetur voluptate incidunt dolorem minima rem?
+                    Olá, bem vindo! Sou formado em biomedicina pela UNIP, mas estou em transição de carreira
+                    para TI. Também sou músico e sempre que posso gravo umas músicas e posto nas plataformas.
                 </p>
             </div>
             <div class="form">
                 <form>
+                    <p>Entre em contato!</p>
                     <input type="text" placeholder="digite seu email">
                     <button>enviar</button>
                 </form>
             </div>
         </section>
-        <hr>
-        
-        <h2>Exemplo de flex box</h2>
-        
-        <div class="flex img">
-            <div>
-                <img src="imgs/25EB9C14-6556-46A4-9491-AD81325376D2.JPG">
-                <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div>
-                <img src="imgs/AE1FE442-78B8-4000-9996-83A6CBB59851.JPG">
-                <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div>
-                <img src="imgs/B7DA4BAF-8191-44EF-A128-8006BA23A86F.JPG">
-                <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-        </div>
     </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
 </body>
 
 </html>
