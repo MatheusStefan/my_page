@@ -1,0 +1,21 @@
+* {
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+body {
+    text-align: center;
+}
+
+p {
+    text-decoration: wavy;
+    
+}
+
+ul {
+    list-style: none;
+}
+
+footer {
+    text-align: center;
+}
+
