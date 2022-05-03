@@ -7,7 +7,6 @@
 }
 
 body {
-    text-align: center;
     background-image: url(imgs/IMG_8877.JPG);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -16,14 +15,38 @@ body {
 
 a {
     text-decoration: none;
-    
 }
 
 ul {
     list-style: none;
 }
 
-footer {
+.container {
     text-align: center;
 }
 
+.container .name h1 {
+    font-size: 40px;
+}
+
+.container .name h5 {
+    font-size: 17px;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.form input {
+    width: 50%;
+}
+
+.form button {
+    width: 10%;
+}
