@@ -13,6 +13,20 @@ body {
     background-position: center center fixed;
 }
 
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    padding: 8px;
+}
+
 a {
     text-decoration: none;
 }
@@ -54,11 +68,15 @@ ul {
 
 .flex {
     display: flex;
-    align-content: space-around;
+}
+
+.flex div {
+    border: 1px solid #a09038;
+    max-width: 200px;
 }
 
 .flex img {
-    max-width: 100px;
+    max-width: 200px;
     border: 5px solid #a09038;
     padding: 0px;
 }
